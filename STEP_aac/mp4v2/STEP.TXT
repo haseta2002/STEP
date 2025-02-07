@@ -1,0 +1,22 @@
+<<<<< Changed for STEP and Apple iTunes by haseta >>>>>
+
+*mp4.h
+Append dllexport (all functions)
+Add MP4Free()
+
+*mp4atom.cpp
+CreateAtom() : Add "©gen"/"©grp"
+
+*atom_meta.cpp / atoms.h
+Add MP4GrpAtom
+
+*mp4meta.cpp / mp3file.h
+GetMetadataDisk() : valid valSize = 6 (mayby...)
+SetMetadataGenre() : StringToGenre() do not called
+Add SetMetadataGroup() / GetMetadataGroup()
+
+*mp4.h / mp4.cpp
+Add MP4SetMetadataGroup() / MP4GetMetadataGroup()
+
+*mp3track.cpp
+FinishWrite() : Do not update birate (Because value is changed)
