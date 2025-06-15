@@ -1,5 +1,16 @@
-﻿################################################################################
-# この .gitignore ファイルは Microsoft(R) Visual Studio によって自動的に作成されました。
-################################################################################
+﻿*.bak
+*.vcxproj.user
+*.chw
 
-/.vs
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.cachefile
+
+Thumbs.db
+.vs
+*/Release
+*/Debug
